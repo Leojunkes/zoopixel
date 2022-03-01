@@ -30,7 +30,7 @@ const Header = () => {
             <Text>Ins</Text>
             <Text>Twitter</Text>
           </HStack>
-          <Image src="/imagens/OpenSea 1.png" />
+          <Image w='10rem' src="/imagens/OpenSea 1.png" />
         </Box>
       </Flex>
     </>

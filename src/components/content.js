@@ -1,15 +1,29 @@
-import { AspectRatio, Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
+import {
+  AspectRatio,
+  Box,
+  Button,
+  Flex,
+  HStack,
+  Image,
+  Text,
+} from "@chakra-ui/react";
 
 const Content = () => {
   return (
     <>
       <Flex maxWidth="90%" m="0 auto" mt="15px">
-        <Image src="/imagens/animado.png" />
-        <AspectRatio maxWidth="500px" ratio={1}>
-          <iframe title="leoanimado" src="/animacoes/lindoAnimado.mp4" />
-        </AspectRatio>
+        <Image src="/imagens/bannerZoo.png" />
       </Flex>
-      <Box maxWidth="500px" alignItems="center" m="100px auto">
+      {/*<Box display="block" type="button" m="-325px 0 0 765px">
+        <Image
+          _hover={{ transform: "scale(1.1)" }}
+          transform="scale(1)"
+          w="330px"
+          src="/imagens/buttongaranta.png"
+        />
+      </Box>*/}
+
+      <Box maxWidth="500px" alignItems="center" m="300px auto">
         <Text>
           ZOOPIXEL é um metaverso de animais estranhos e divertidos criados em
           pixel art. Nossa equipe tem o intuito de mostrar ao mundo um outro
