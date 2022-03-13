@@ -11,23 +11,15 @@ import {
 const Content = () => {
   return (
     <>
-      <Flex maxWidth="90%" m="0 auto" mt="15px">
-        <Image src="/imagens/bannerZoo.png" />
+      <Flex  backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage="url('/imagens/initialBg.png')" w='600'h='600' maxWidth="90%" m="0 auto" mt="15px">
+        
       </Flex>
-      {/*<Box display="block" type="button" m="-325px 0 0 765px">
-        <Image
-          _hover={{ transform: "scale(1.1)" }}
-          transform="scale(1)"
-          w="330px"
-          src="/imagens/buttongaranta.png"
-        />
-      </Box>*/}
 
       <Box maxWidth="500px" alignItems="center" m="300px auto">
         <Text>
           ZOOPIXEL é um metaverso de animais estranhos e divertidos criados em
           pixel art. Nossa equipe tem o intuito de mostrar ao mundo um outro
-          lado da vida selvagem (um pouco menos selvagem, talvez?!
+          lado da vida selvagem (um pouco menos selvagem, talvez?!)
         </Text>
       </Box>
       <Text fontSize="2rem" textAlign="center">
