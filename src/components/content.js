@@ -12,7 +12,7 @@ const Content = () => {
   return (
     <>
       <Flex  backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage="url('/imagens/initialBg.png')" w='600'h='600' maxWidth="90%" m="0 auto" mt="15px">
-        ola amiguinhos sou animado
+        ola amiguinhos sou animado e gatão
       </Flex>
 
       <Box maxWidth="500px" alignItems="center" m="300px auto">
