@@ -11,8 +11,24 @@ import {
 const Content = () => {
   return (
     <>
-      <Flex  backgroundRepeat="no-repeat" backgroundSize="cover" backgroundImage="url('/imagens/initialBg.png')" w='600'h='600' maxWidth="90%" m="0 auto" mt="15px">
-        ola amiguinhos sou animado e gatão
+      <Flex
+        backgroundRepeat="no-repeat"
+        backgroundSize="cover"
+        backgroundImage="url('/imagens/initialBg.png')"
+        w="600"
+        h="600"
+        maxWidth="90%"
+        m="0 auto"
+        mt="15px"
+      >
+        <Flex m="300px auto">
+          <Box boxSize="10rem">
+            <Image src="imagens/setaDireita.png" />
+          </Box>
+          <Box boxSize="15rem">
+            <Image src="imagens/botãoPassaro.png" />
+          </Box>
+        </Flex>
       </Flex>
 
       <Box maxWidth="500px" alignItems="center" m="300px auto">
