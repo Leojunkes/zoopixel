@@ -1,8 +1,8 @@
 import { Flex } from "@chakra-ui/react";
-import { useState } from "react/cjs/react.production.min";
+
 
 const teste = () => {
-  const [isteste,setIsteste] = useState();
+  const provas = ["prova1", "prova2", "prova3", "prova4", "prova5"];
   return (
     <>
       <Flex>

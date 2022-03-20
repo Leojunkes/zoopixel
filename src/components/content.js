@@ -25,13 +25,18 @@ const Content = () => {
           <Box boxSize="10rem">
             <Image src="imagens/setaDireita.png" />
           </Box>
-          <Box boxSize="15rem">
-            <Image src="imagens/botãoPassaro.png" />
+          <Box cursor="pointer" boxSize="14.8rem">
+            <Image
+              transform="scale(0.9)"
+              _hover={{ transform: "scale(1)" }}
+              w="17rem"
+              src="imagens/botãoPassaro.png"
+            />
           </Box>
         </Flex>
       </Flex>
 
-      <Box maxWidth="500px" alignItems="center" m="300px auto">
+      <Box maxWidth="500px" alignItems="center" m="200px auto">
         <Text>
           ZOOPIXEL é um metaverso de animais estranhos e divertidos criados em
           pixel art. Nossa equipe tem o intuito de mostrar ao mundo um outro
@@ -69,7 +74,7 @@ const Content = () => {
           </Box>
         </HStack>
       </Flex>
-      <Text mt="60px" fontSize="2rem" textAlign="center">
+      <Text mt="200px" fontSize="2rem" textAlign="center">
         NOSSOS NFT's
       </Text>
       <Flex>
