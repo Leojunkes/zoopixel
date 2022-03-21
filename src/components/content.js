@@ -21,15 +21,15 @@ const Content = () => {
         m="0 auto"
         mt="15px"
       >
-        <Flex m="300px auto">
-          <Box boxSize="10rem">
-            <Image src="imagens/setaDireita.png" />
+        <Flex m="250px auto">
+          <Box boxSize="15rem">
+            <Image ml='50px' src="imagens/setaDireita.png" />
           </Box>
-          <Box cursor="pointer" boxSize="14.8rem">
+          <Box cursor="pointer" boxSize="20rem">
             <Image
               transform="scale(0.9)"
               _hover={{ transform: "scale(1)" }}
-              w="17rem"
+              w="20rem"
               src="imagens/botãoPassaro.png"
             />
           </Box>
