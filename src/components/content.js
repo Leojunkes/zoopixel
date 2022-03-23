@@ -11,7 +11,7 @@ import {
 const Content = () => {
   return (
     <>7
-    OI AMADA
+    OI AMADA llllaoi
       <Flex
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
