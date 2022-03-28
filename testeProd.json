@@ -1,0 +1,19 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Leonardo",
+      "salário": "3000"
+    },
+    {
+      "id": "2",
+      "nome": "Lipe",
+      "salário": "2000"
+    },
+    {
+      "id": "3",
+      "nome": "Gabriel",
+      "salário": "900"
+    }
+  ]
+}
