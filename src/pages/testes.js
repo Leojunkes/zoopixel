@@ -1,34 +1,66 @@
 import { Button, Flex, Text } from "@chakra-ui/react";
 import data from "../../testeProd.json";
+import { useState, useEffect } from "react";
+import swal from "sweetalert";
 
 const teste = () => {
-  const number = ["10", "10", "10", "25", "10"];
-  const numberData = data.produtos.map((n) => {
-    n.salário;
-  });
-  const tudo = { ...numberData };
+  const [salario, setSalario] = useState([]);
+  var numberData1 = data.produtos;
+
+  useEffect(() => {
+    const localStorageSalario = JSON.parse(localStorage.getItem("salary"));
+
+    const salario1 =
+      localStorage.getItem("salary") !== null ? localStorageSalario : [];
+    console.log(salario);
+
+    setSalario([...salario1]);
+  }, []);
+
+  const numberData = data.produtos.map((m) => <>{m.salário}</>);
+
   const initialValue = "";
-  const sumWithInitial = number.reduce(
+  const sumWithInitial = numberData.reduce(
     (previousValue, currentValue) => previousValue + currentValue,
     initialValue
   );
+  const testeAlert = () => {
+    swal("lindo alerta galera");
+  };
+
   var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-  var soma = numberData.reduce(function (soma, i) {
-    return soma + i;
-  });
+  console.log(data);
 
-  console.log(tudo);
+  const number2 = JSON.parse(JSON.stringify(data));
+  //const number3 = number2.reduce((a, b) => a + b.points, 0);
+
+  console.log(number2);
+
+  //var soma = number2.reduce(function (soma, i) {
+  //  return soma + i;
+  //});
+  const saveStorage = () => {
+    localStorage.setItem("salary", JSON.stringify(salario));
+    console.log(salario);
+  };
 
   return (
     <>
-      <Flex>
-        <Button type="button">aperte</Button>
-        <Text>{numberData}</Text>
+      <Flex alignItems="center" flexDirection="column">
+        {data.produtos.map((n) => (
+          <Text>{n.salário}</Text>
+        ))}
+        <Button onClick={() => testeButton()} type="button">
+          aperte
+        </Button>
+        <Text>{number2.nome}</Text>
+        <Button onClick={saveStorage} type="button">
+          salvar
+        </Button>
 
-        <Text>{sumWithInitial}</Text>
+        <Text></Text>
       </Flex>
-      <Text>{soma}</Text>
     </>
   );
 };
