@@ -10,8 +10,7 @@ import {
 
 const Content = () => {
   return (
-    <>7
-    OI AMADA llllaoi amotelinda kkkkkkkkkkk fui
+    <>
       <Flex
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
@@ -24,7 +23,7 @@ const Content = () => {
       >
         <Flex m="250px auto">
           <Box boxSize="15rem">
-            <Image ml='50px' src="imagens/setaDireita.png" />
+            <Image ml="50px" src="imagens/setaDireita.png" />
           </Box>
           <Box cursor="pointer" boxSize="20rem">
             <Image
@@ -36,12 +35,17 @@ const Content = () => {
           </Box>
         </Flex>
       </Flex>
-
-      <Box maxWidth="500px" alignItems="center" m="200px auto">
-        <Text>
-          ZOOPIXEL é um metaverso de animais estranhos e divertidos criados em
-          pixel art. Nossa equipe tem o intuito de mostrar ao mundo um outro
-          lado da vida selvagem (um pouco menos selvagem, talvez?!)
+      <Box
+        fontSize="1.4rem"
+        maxWidth="500px"
+        alignItems="center"
+        m="100px auto"
+      >
+        <Text fontFamily="Tapestry">
+          <Text fontWeight="bold">ZOOPIXEL</Text> é um metaverso de animais
+          estranhos e divertidos criados em pixel art. Nossa equipe tem o
+          intuito de mostrar ao mundo um outro lado da vida selvagem (um pouco
+          menos selvagem, talvez?!)
         </Text>
       </Box>
       <Text fontSize="2rem" textAlign="center">
@@ -75,16 +79,16 @@ const Content = () => {
           </Box>
         </HStack>
       </Flex>
-      <Text mt="200px" fontSize="2rem" textAlign="center">
+      <Text mt="100px" fontSize="2rem" textAlign="center">
         NOSSOS NFT's
       </Text>
       <Flex>
-        <Box alignItems="center" m="60px auto">
-          <Image
-            w="150px"
-            src="https://pbs.twimg.com/profile_images/920470127388237824/ENEZQzU2_400x400.jpg"
-            borderRadius="8px"
-          />
+        <Box display="flex" alignItems="center" m="60px auto">
+          <HStack>
+            <Image w="150px" src="/imagens/animalLeo.gif" borderRadius="8px" />
+            <Image borderRadius="8px" w="150px" src="imagens/lionLeo.gif" />
+            <Image borderRadius="8px" w="150px" src="imagens/flower.gif" />
+          </HStack>
         </Box>
       </Flex>
     </>

@@ -32,6 +32,11 @@
       font-size: 87.5%;
   }
 }
+@media (max-width: 520px) {
+  html {
+      font-size: 70.5%;
+  }
+}
 
 body,
 imput,

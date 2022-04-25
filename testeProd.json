@@ -1,19 +1,22 @@
 {
   "produtos": [
     {
-      "id": "1",
+      "id": 1,
       "nome": "Leonardo",
-      "salário": "3000"
+      "salario": 3000,
+      "quantidade": 1
     },
     {
-      "id": "2",
+      "id": 2,
       "nome": "Lipe",
-      "salário": "2000"
+      "salario": 2000,
+      "quantidade": 1
     },
     {
-      "id": "3",
+      "id": 3,
       "nome": "Gabriel",
-      "salário": "900"
+      "salario": 900,
+      "quantidade": 1
     }
   ]
 }

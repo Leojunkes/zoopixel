@@ -44,6 +44,11 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
+          <link
+            href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap"
+            rel="stylesheet"
+          />
+
           <link rel="icon" href="" />
           <link
             rel="shortcut icon"
